@@ -1,0 +1,15 @@
+<!doctype html>
+<meta charset="utf-8"><title>Rugscope live scan</title>
+<style>body{font:15px system-ui;background:#050509;color:#eee;max-width:640px;margin:40px auto}input{width:70%;padding:8px}li{font-family:monospace}</style>
+<h1>Rugscope</h1>
+<form id="f"><input id="q" placeholder="token address"> <button>Scan</button></form>
+<ul id="log"></ul><h2 id="v"></h2>
+<script>
+f.onsubmit = (e) => {
+  e.preventDefault(); log.innerHTML = ''; v.textContent = '';
+  const es = new EventSource('https://augur-trade.com/hub/api/v1/rugscope?stream=1&q=' + encodeURIComponent(q.value.trim()));
+  es.addEventListener('core', (m) => { const d = JSON.parse(m.data); log.insertAdjacentHTML('beforeend', `<li>✓ ${d.name} · ${d.ms} ms</li>`); });
+  es.addEventListener('done', (m) => { const r = JSON.parse(m.data).readout; v.textContent = `${r.symbol}: ${r.verdict.label} · ${r.score}/100`; es.close(); });
+  es.addEventListener('error', (m) => { try { v.textContent = JSON.parse(m.data).error; } catch (_) {} es.close(); });
+};
+</script>

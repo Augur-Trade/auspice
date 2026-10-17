@@ -1,0 +1,81 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "A.U.G.U.R Rugscope API",
+  "version": "3.0.0",
+  "description": "Free rug check for Solana and 13 EVM chains. Same engine as augur-trade.com/rug."
+ },
+ "servers": [
+  {
+   "url": "https://augur-trade.com"
+  }
+ ],
+ "paths": {
+  "/hub/api/v1/rugscope": {
+   "get": {
+    "operationId": "rugscope",
+    "summary": "Scan a token",
+    "security": [],
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Solana mint, 0x contract, or a Dexscreener/explorer link"
+     },
+     {
+      "name": "chain",
+      "in": "query",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "robinhood",
+        "base",
+        "ethereum",
+        "bsc",
+        "arbitrum",
+        "polygon",
+        "optimism",
+        "avalanche",
+        "linea",
+        "sonic",
+        "unichain",
+        "berachain",
+        "hyperevm"
+       ]
+      },
+      "description": "EVM chain (auto-detected when omitted)"
+     },
+     {
+      "name": "stream",
+      "in": "query",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "1"
+       ]
+      },
+      "description": "Server-sent events: start, core\u00d7N, done | error"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Scan result {ok, ms, cores, readout} (or text/event-stream when stream=1)"
+     },
+     "400": {
+      "description": "Not a token address"
+     },
+     "429": {
+      "description": "20/min or 400/day per IP"
+     },
+     "503": {
+      "description": "Busy, retry"
+     }
+    }
+   }
+  }
+ }
+}
