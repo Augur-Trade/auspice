@@ -1,6 +1,6 @@
 # Scan API
 
-One free endpoint, the same one the [Rugscope site](https://augur-trade.com/rug/) uses. No key, no signup, CORS open.
+One free endpoint, the same one the [Auspice site](https://augur-trade.com/rug/) uses. No key, no signup, CORS open.
 
 ```
 GET https://augur-trade.com/hub/api/v1/rugscope?q=<token address>[&chain=<evm chain>][&stream=1]

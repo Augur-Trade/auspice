@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Rugscope from the shell. Needs curl + jq.
+# Auspice from the shell. Needs curl + jq.
 set -euo pipefail
 Q=${1:-DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263}
 

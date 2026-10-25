@@ -1,7 +1,7 @@
 {
  "openapi": "3.1.0",
  "info": {
-  "title": "A.U.G.U.R Rugscope API",
+  "title": "A.U.G.U.R Auspice API",
   "version": "3.0.0",
   "description": "Free rug check for Solana and 13 EVM chains. Same engine as augur-trade.com/rug."
  },

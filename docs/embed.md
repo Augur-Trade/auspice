@@ -10,4 +10,4 @@
 
 **Token reports:** every liquid token has a crawlable report page, `https://augur-trade.com/rug/t/<mint>`, listed at [`https://augur-trade.com/rug/tokens/`](https://augur-trade.com/rug/tokens/).
 
-**In the A.U.G.U.R app:** Rugscope is built in. Every token page has a *Rug scan* button, and snipers run the [rug guard](verdicts.md#the-rug-guard) before every buy.
+**In the A.U.G.U.R app:** Auspice is built in. Every token page has a *Rug scan* button, and snipers run the [rug guard](verdicts.md#the-rug-guard) before every buy.

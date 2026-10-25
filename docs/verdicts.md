@@ -1,4 +1,4 @@
-# How Rugscope decides
+# How Auspice decides
 
 Every scan ends in one **verdict**, a **0–100 score** with a letter **grade**, and the evidence behind it.
 

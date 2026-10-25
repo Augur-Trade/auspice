@@ -30,4 +30,4 @@ Every scan fires its engines **in parallel**, and each one reports as soon as it
 
 Chains: Robinhood Chain (`robinhood`), Base (`base`), Ethereum (`ethereum`), BNB Chain (`bsc`), Arbitrum (`arbitrum`), Polygon (`polygon`), Optimism (`optimism`), Avalanche (`avalanche`), Linea (`linea`), Sonic (`sonic`), Unichain (`unichain`), Berachain (`berachain`), HyperEVM (`hyperevm`).
 
-"Our tape" is A.U.G.U.R's own live recording of every pump.fun bonding-curve trade since September 2026: tens of millions of trades and hundreds of thousands of launches. It is why Rugscope can see bundles, dev behaviour and flow the moment a coin launches, before aggregators index it.
+"Our tape" is A.U.G.U.R's own live recording of every pump.fun bonding-curve trade since September 2026: tens of millions of trades and hundreds of thousands of launches. It is why Auspice can see bundles, dev behaviour and flow the moment a coin launches, before aggregators index it.

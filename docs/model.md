@@ -1,4 +1,4 @@
-# Model card: Rugscope dump probability
+# Model card: Auspice dump probability
 
 **Question it answers:** for a pump.fun coin still on its bonding curve, what is the chance it **falls 50% within the
 next hour**?

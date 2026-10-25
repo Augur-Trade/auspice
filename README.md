@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://augur-trade.com/rug/"><img src="media/header.jpg" alt="A.U.G.U.R Rugscope" width="100%"></a>
+  <a href="https://augur-trade.com/rug/"><img src="media/header.jpg" alt="A.U.G.U.R Auspice" width="100%"></a>
 </p>
 
 <p align="center">
@@ -14,19 +14,19 @@
 
 <br>
 
-**Rugscope** is A.U.G.U.R's rug checker. Paste a token and ten engines fire at once: bundle forensics, insider
+**Auspice** is A.U.G.U.R's rug checker. Paste a token and ten engines fire at once: bundle forensics, insider
 tracking, the dev's all-time record, named wallets, organic volume, our own pump.fun tape, contract traps and a
 probability model trained on real launch outcomes. You watch every reading land, and you get one verdict.
 
 > [!NOTE]
-> This repository documents Rugscope: what it checks, how it decides, the free scan API with real responses, and examples.
+> This repository documents Auspice: what it checks, how it decides, the free scan API with real responses, and examples.
 > The engines, data and model weights are closed source, so none of that is here.
 
-<p align="center"><a href="https://augur-trade.com/rug/?q=HhAja4gSP1KW9ceDFMKHDmNVX7VovCS8xtsu6LKtpump"><img src="media/scan.jpg" alt="Rugscope scanning a pump.fun launch" width="100%"></a></p>
+<p align="center"><a href="https://augur-trade.com/rug/?q=HhAja4gSP1KW9ceDFMKHDmNVX7VovCS8xtsu6LKtpump"><img src="media/scan.jpg" alt="Auspice scanning a pump.fun launch" width="100%"></a></p>
 
 ## What a scan tells you
 
-<img src="media/mobile.jpg" alt="Rugscope on a phone" width="300" align="right">
+<img src="media/mobile.jpg" alt="Auspice on a phone" width="300" align="right">
 
 **One verdict:** *Looks strong*, *Mixed*, *Rug risk*, *Avoid* or *Known asset*, with a 0–100 score and a grade.
 
@@ -59,7 +59,7 @@ range 12.7–32.3%, against a 19.4% base rate), and the reasons behind it.
 
 What each one checks: [docs/engines.md](docs/engines.md). How the verdict is decided and the rug-guard rules: [docs/verdicts.md](docs/verdicts.md).
 
-<p align="center"><img src="media/evm.jpg" alt="Rugscope on an EVM token" width="100%"></p>
+<p align="center"><img src="media/evm.jpg" alt="Auspice on an EVM token" width="100%"></p>
 
 ## Free API
 
@@ -85,7 +85,7 @@ It is a ranking aid, not a prophecy, and it only scores coins still on the bondi
 - **Site:** [augur-trade.com/rug](https://augur-trade.com/rug/) · deep link `?q=<address>` · [embed](docs/embed.md) with `?embed=1`
 - **Token reports:** [augur-trade.com/rug/tokens](https://augur-trade.com/rug/tokens/)
 - **In the A.U.G.U.R app:** a *Rug scan* on every token page, and the rug guard runs before every sniper buy
-- **For AI agents:** the same engines are tools on [A.U.G.U.R Synapse](https://github.com/Augur-Trade/synapse) (`token_risk`, `launch_scan`, `bundle_forensics`, `evm_token_security`…)
+- **For AI agents:** the same engines are tools on [A.U.G.U.R Foresight](https://github.com/Augur-Trade/foresight) (`token_risk`, `launch_scan`, `bundle_forensics`, `evm_token_security`…)
 
 | Path | |
 |---|---|
@@ -95,4 +95,4 @@ It is a ranking aid, not a prophecy, and it only scores coins still on the bondi
 
 <br>
 
-<p align="center"><sub><a href="https://augur-trade.com">augur-trade.com</a> · Rugscope is part of A.U.G.U.R, the autonomous trading agent.<br>A scan is information, not financial advice. A clean scan does not mean a token can't go to zero.</sub></p>
+<p align="center"><sub><a href="https://augur-trade.com">augur-trade.com</a> · Auspice is part of A.U.G.U.R, the autonomous trading agent.<br>A scan is information, not financial advice. A clean scan does not mean a token can't go to zero.</sub></p>
