@@ -44,18 +44,31 @@ range 12.7–32.3%, against a 19.4% base rate), and the reasons behind it.
 
 ## The engines
 
-| Solana | | EVM (13 chains) | |
-|---|---|---|---|
-| **Contract** | Solana RPC | **Market** | Dexscreener |
-| **Launch model** | our pump.fun tape | **Owner powers** | on-chain bytecode + calls |
-| **Token-2022** | Solana RPC | **Honeypot simulation** | on-chain simulation |
-| **Bundle forensics** | our tape + RugCheck | **GoPlus** | GoPlus Security |
-| **Jupiter** | Jupiter | **Holders** | on-chain |
-| **Dexscreener** | Dexscreener | **Launch forensics** | on-chain logs |
-| **Dev dossier** | pump.fun |  | |
-| **Tape flow** | our pump.fun tape |  | |
-| **Known wallets** | our caller + wallet index |  | |
-| **Probability model** | gradient-boosted model, our data |  | |
+**Solana — 10 engines**
+
+| Engine | Source |
+|---|---|
+| **Contract** | Solana RPC |
+| **Launch model** | our pump.fun tape |
+| **Token-2022** | Solana RPC |
+| **Bundle forensics** | our tape + RugCheck |
+| **Jupiter** | Jupiter |
+| **Dexscreener** | Dexscreener |
+| **Dev dossier** | pump.fun |
+| **Tape flow** | our pump.fun tape |
+| **Known wallets** | our caller + wallet index |
+| **Probability model** | gradient-boosted model, our data |
+
+**EVM — 13 chains, 6 engines**
+
+| Engine | Source |
+|---|---|
+| **Market** | Dexscreener |
+| **Owner powers** | on-chain bytecode + calls |
+| **Honeypot simulation** | on-chain simulation |
+| **GoPlus** | GoPlus Security |
+| **Holders** | on-chain |
+| **Launch forensics** | on-chain logs |
 
 What each one checks: [docs/engines.md](docs/engines.md). How the verdict is decided and the rug-guard rules: [docs/verdicts.md](docs/verdicts.md).
 
