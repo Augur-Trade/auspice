@@ -26,8 +26,6 @@ probability model trained on real launch outcomes. You watch every reading land,
 
 ## What a scan tells you
 
-<img src="media/mobile.jpg" alt="Auspice on a phone" width="300" align="right">
-
 **One verdict:** *Looks strong*, *Mixed*, *Rug risk*, *Avoid* or *Known asset*, with a 0–100 score and a grade.
 
 **The checklist:** mint and freeze authority, Token-2022 traps (transfer fees, hooks, permanent delegate), mutable
@@ -40,7 +38,7 @@ metadata, liquidity, and on EVM the owner's powers plus a buy/sell honeypot simu
 **The odds:** for coins on the pump.fun curve, the chance of a 50% dump in the next hour (here **26.5%**,
 range 12.7–32.3%, against a 19.4% base rate), and the reasons behind it.
 
-<br clear="right">
+<p align="center"><img src="media/mobile.jpg" alt="Auspice on a phone" width="320"></p>
 
 ## The engines
 
@@ -100,11 +98,11 @@ It is a ranking aid, not a prophecy, and it only scores coins still on the bondi
 - **In the A.U.G.U.R app:** a *Rug scan* on every token page, and the rug guard runs before every sniper buy
 - **For AI agents:** the same engines are tools on [A.U.G.U.R Foresight](https://github.com/Augur-Trade/foresight) (`token_risk`, `launch_scan`, `bundle_forensics`, `evm_token_security`…)
 
-| Path | |
-|---|---|
-| [`docs/`](docs) | [engines](docs/engines.md) · [verdicts](docs/verdicts.md) · [model card](docs/model.md) · [API](docs/api.md) · [embed](docs/embed.md) |
-| [`examples/`](examples) | curl, Node (streaming + pre-trade gate), Python, browser EventSource, embed |
-| [`spec/openapi.json`](spec/openapi.json) | the scan endpoint |
+**In this repo**
+
+- [`docs/`](docs): [engines](docs/engines.md) · [verdicts](docs/verdicts.md) · [model card](docs/model.md) · [API](docs/api.md) · [embed](docs/embed.md)
+- [`examples/`](examples): curl, Node (streaming + pre-trade gate), Python, browser EventSource, embed
+- [`spec/openapi.json`](spec/openapi.json): the scan endpoint
 
 <br>
 
